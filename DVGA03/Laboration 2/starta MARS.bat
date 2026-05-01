@@ -1,0 +1,1 @@
+java --module-path "C:\Users\Krille\Desktop\Drivers\JavaSDKs\javafx-sdk-21\lib" --add-modules ALL-MODULE-PATH -jar MarsHH.jar
