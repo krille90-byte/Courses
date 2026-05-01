@@ -1,0 +1,141 @@
+/* Main stylesheet, to be included on all pages */
+body {
+    background: linear-gradient(180deg, #0f0f0f, #000);
+    color: #fff;
+    font-family: "Ubuntu","Noto Sans",Helvetica,sans-serif;
+    margin: 0;
+}
+
+html {
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    border-bottom: 2px solid #202020;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+header h1 {
+    font-size: 18pt;
+    margin: 0;
+}
+
+header a, .productdetails h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: #4287f5;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul, .nodot {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+    line-height: 60px; /* same as header height */
+}
+
+nav a, nav p {
+    margin: 0 15px 0 15px;
+    text-decoration: none;
+    font-size: 13pt;
+}
+
+nav a:hover, .productdetails h2 a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    width: 60px;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 20pt;
+    margin: 0 0 4px 0;
+}
+
+h2 {
+    font-size: 17pt;
+    margin: 6px 0 4px 0;
+}
+
+.itemcontainer {
+    background-color: #161616;
+    border-radius: 12px;
+    border: 2px solid #202020;
+    margin: 20px;
+    padding: 12px;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.butcentred {
+    text-align: center;
+}
+
+.note { /* Changes the color of note in index after Google Maps and adds a margin of 16px to note*/
+    color: #c1c1c1;
+    margin: 16px 0 0 0;
+}
+
+/* dropdown stuff */
+.dropdownable {
+    position: relative;
+    display: inline-block;
+}
+
+.actualdropdown {
+    display: none;
+    position: absolute;
+    background-color: #161616;
+    min-width: 150px;
+    right: 0;
+    top: 60px;
+    flex-direction: column;
+    text-align: right;
+    border: solid #202020;
+    border-width: 0 0 2px 2px;
+    box-shadow: -3px 5px 6px -1px #000000;
+    line-height: normal;
+}
+
+.actualdropdown a {
+    padding: 6px 20px 6px 0;
+    margin: 0;
+    transition: .1s background-color;
+}
+
+.actualdropdown a:hover {
+    background-color: #262626;
+}
+
+.actualdropdown hr {
+    width: 100px;
+    border-color: #676767;
+}
+
+.dropdownable:hover .actualdropdown {
+    display: flex;
+}

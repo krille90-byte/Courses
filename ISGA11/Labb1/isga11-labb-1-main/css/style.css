@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(180deg, #101010, #000);
+    color: #fff;
+    font-family: "Ubuntu","Noto Sans",Helvetica,sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    background-color: #000;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    /*padding: 6px;*/
+    border-bottom: 2px solid #202020;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.title {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.title img {
+    width: 60px;
+    padding-right: 20px;
+}
+
+h1 {
+    font-size: 20pt;
+    margin: 0 0 4px 0;
+}
+
+h2 {
+    font-size: 17pt;
+    margin: 6px 0 4px 0;
+}
+
+header h1 {
+    font-size: 18pt;
+}
+
+header a, .productdetails h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: #4287f5;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    margin: 0 20px 0 5px;
+    text-decoration: none;
+    font-size: 13pt;
+}
+
+nav a:hover, .productdetails h2 a:hover {
+    text-decoration: underline;
+}
+
+.itemcontainer {
+    background-color: #161616;
+    border-radius: 12px;
+    border: 2px solid #202020;
+    margin: 20px;
+    padding: 12px;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+.butcentred {
+    text-align: center;
+}

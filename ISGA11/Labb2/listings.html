@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Labbgrupp 23: Annonser</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/listings.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+    </head>
+    <body>
+        <header> <!-- Header with our logo -->
+            <a href="index.html" class="title">
+                <img src="images/Labbgrupp23_Logo.png" alt="Labbgrupp 23, Hem"> <!-- The logo for the company -->
+                <h1>ラブグルプ二十三</h1>
+            </a>
+            <nav> <!-- Nav for "Hem", "Annonser" and "Om oss". This is shown anywhere you go on the website -->
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="listings.html">Annonser</a></li>
+                </ul>
+                <ul class="dropdownable">
+                    <li><p class="dropdownmenu">Mer &darr;</p></li>
+                    <li class="actualdropdown">
+                        <a href="contact.html">Om oss</a>
+                        <hr>
+                        <a href="https://twitter.com/rabugrupu23">Twitter</a>
+                        <hr>
+                        <a href="https://watchanimeattheoffice.com">Discord</a>
+                        <hr>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main> <!-- "List" of our products, every object below follows the same structure, with list and legend -->
+            <h1>Annonslista</h1>
+            <p><em>Följande produkter finns nuvarande hos oss</em></p>
+            <div class="listitem" id="bluemopp">
+                <img src="images/bluemopp.jpg" alt="Blå moped" class="flashy">
+                <div class="itemcontainer">
+                    <fieldset>
+                        <legend>Kawasaki KDX 125B 1991</legend>
+                        <h3 class="pricetag legend2">8 000kr</h3>
+                        <ul>
+                            <li>Typ: Lättmotorcykel</li>
+                            <li>Märke: Kawasaki</li>
+                            <li>Modell: 125B</li>
+                            <li>Modellår: 1991</li>
+                            <li>Senast besiktning: 2021-05-21</li>
+                        </ul>
+                        <p>
+                            En vacker blå, fräsig, och rent av superhäftig motorcykel som kommer att finnas där för dig i många mil. Finns tillgänglig i Lilla Edet just nu, ring om du är intresserad.
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+            <hr>
+            <div class="listitem" id="moppe">
+                <img src="images/moppe.jpg" alt="Moped" class="flashy">
+                <div class="itemcontainer">
+                    <fieldset>
+                        <legend>Gilera SMT 45 2009</legend>
+                        <h3 class="pricetag legend2">16 000kr</h3>
+                        <ul>
+                            <li>Typ: Moped</li>
+                            <li>Märke: Gilera</li>
+                            <li>Modell: SMT 45</li>
+                            <li>Modellår: 2009</li>
+                        </ul>
+                        <p>
+                            Relativt nya däck. Trimmad fast odrevad, toppar 65 km/h. Inga kända fel, förutom en liten spricka i vänstra kåpan.
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+            <hr>
+            <div class="listitem" id="coolbil">
+                <img src="images/bil.jpg" alt="Rostig bil" class="flashy">
+                <div class="itemcontainer">
+                    <fieldset>
+                        <legend>Volvo 142 1971</legend>
+                        <h3 class="pricetag legend2">6p Pripps blå</h3>
+                        <ul>
+                            <li>Typ: Bil</li>
+                            <li>Märke: Volvo</li>
+                            <li>Modell: 144</li>
+                            <li>Modellår: 1971</li>
+                            <li>Senast besiktning: 1992-10-09</li>
+                        </ul>
+                        <p>
+                            Väldigt rostig, men inte så illa som man tror. Inte körd sedan 90-talet, kanske går att rädda något.
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+            <div id="containerA"> <!-- Google Maps, company location -->
+                <h2>Vi finns här i Karlstad, välkommen in!</h2>
+                <div id="googlemaps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.6147278910933!2d13.578336810011967!3d59.40614010749827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20Universitet!5e0!3m2!1ssv!2sse!4v1643378056701!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div id="DownUnder"> <!-- Contact information ("About us"), takes you to contact information -->
+                <p>Om ni har frågor, eller vill nå oss för att få mer information, vänligen <a href="contact.html">kontakta oss</a>!</p>
+            </div>
+        </main>
+    </body>
+</html>

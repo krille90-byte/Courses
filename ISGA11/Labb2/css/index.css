@@ -1,0 +1,132 @@
+/* Style specific for index.html */
+main {
+    padding: 8px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 40px 0 40px;
+}
+
+.content {
+    flex-grow: 1;
+    max-width: 75%;
+}
+
+.productitem {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.1s border ease-in;
+}
+
+.productitem:hover {
+    border: 2px solid #f0f0f0;
+}
+
+.imagecontainer {
+    margin-right: 16px;
+}
+
+.imagecontainer img {
+    max-width: 30vw;
+    border-radius: 8px;
+}
+
+.productitem h2, .productdetails a {
+    text-align: center;
+}
+
+.productdetails {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #161616;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-top: 2px solid #202020;
+    box-shadow: 0px 0px 15px 0px #000000;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #d1d1d1;
+}
+
+.sortoptions select {
+    height: 26px;
+    width: 200px;
+    padding: 4px;
+    margin: 0 6px 0 6px;
+    vertical-align: middle;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.sortoptions option {
+    display: table-cell;
+    text-align: center;
+    padding: 0 6px 0 6px;
+}
+
+aside {
+    max-width: 25%;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 8px;
+    transition: .1s transform ease-in;
+}
+
+aside img:hover {
+    transform: scale(1.03);
+}
+
+/* Form ad thing */
+.adform textarea {
+    resize: vertical;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+.adform input[type=submit],
+.adform input[type=email],
+.adform select,
+.adform textarea {
+    width: 100%;
+    box-sizing: border-box; /* otherwise the textfield borks out in width :( */
+    padding: 4px;
+}
+
+.adform input[type=submit] { margin-top: 6px; }
+.adform input[type=checkbox] { margin: 0 4px 2px 0; }
+
+.adform input,
+.adform select,
+.adform textarea {
+    margin-bottom: 6px;
+    vertical-align: middle;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.adform label {
+    font-size: 10.5pt;
+    user-select: none; /* prevent e.g. spam-click toggles to highlight the text */
+}
+
+.adform p {
+    margin: 6px 0 6px 0;
+}

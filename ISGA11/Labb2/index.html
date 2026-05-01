@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Labbgrupp 23</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+    </head>
+    <body>
+        <header> <!-- Header with our logo -->
+            <a href="index.html" class="title">
+                <img src="images/Labbgrupp23_Logo.png" alt="Labbgrupp 23, Hem"> <!-- The logo for the company -->
+                <h1>ラブグルプ二十三</h1>
+            </a>
+            <nav> <!-- Nav for "Hem", "Annonser" and "Om oss". This is shown anywhere you go on the website -->
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="listings.html">Annonser</a></li>
+                </ul>
+                <ul class="dropdownable">
+                    <li><p class="dropdownmenu">Mer &darr;</p></li>
+                    <li class="actualdropdown">
+                        <a href="contact.html">Om oss</a>
+                        <hr>
+                        <a href="https://twitter.com/rabugrupu23">Twitter</a>
+                        <hr>
+                        <a href="https://watchanimeattheoffice.com">Discord</a>
+                        <hr>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content"> <!-- Left/main content -->
+                <div class="itemcontainer butcentred"> <!-- Top box with Google Maps, and a message to all customers (about COVID-19) -->
+                    <h1>Kom och träffa oss!</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2030.6147283405533!2d13.5783368!3d59.4061401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20Universitet!5e0!3m2!1ssv!2sse!4v1643378175843!5m2!1ssv!2sse" width="500" height="340" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p class="note"><em>På grund av rådande pandemi ber vi er att vara symptomfria och använda ansiktsskydd. <strong>Tack!</strong></em></p>
+                </div>
+                <div class="itemcontainer butcentred sortoptions"> <!-- Sorting settings -->
+                    <select name="sortorder">
+                        <option value="Bäst först">Bäst först</option>
+                        <option value="Bäst sist">Bäst sist</option>
+                        <option value="Sämst först">Sämst först</option>
+                        <option value="Sämst sist">Sämst sist</option>
+                        <option value="Pris stigande">Pris stigande</option>
+                        <option value="Pris fallande">Pris fallande</option>
+                    </select>
+                    <select name="region">
+                        <option value="Karlstad">Karlstad</option>
+                        <option value="Lilla Edet">Lilla Edet</option>
+                    </select>
+                    <select multiple>
+                        <option value="monday" selected>Må</option>
+                        <option value="tuesday">Ti</option>
+                        <option value="wednesday">On</option>
+                        <option value="thursday">To</option>
+                        <option value="friday">Fr</option>
+                        <option value="saturday">Lö</option>
+                        <option value="sunday">Sö</option>
+                    </select>
+                </div>
+                <!-- Items for sale -->
+                <div class="itemcontainer productitem">
+                    <div class="imagecontainer">
+                        <a href="listings.html#moppe"><img src="images/moppe.jpg" alt="Moped"></a>
+                    </div>
+                    <div class="productdetails">
+                        <h2><a href="listings.html#moppe">Gilera SMT 45 2009</a></h2>
+                        <p>Relativt nya däck. Trimmad fast odrevad, toppar 65 km/h. Inga kända fel, förutom en liten spricka i vänstra kåpan.</p>
+                        <a href="listings.html#moppe"><p>Läs mer på produktsidan</p></a>
+                    </div>
+                </div>
+                <div class="itemcontainer productitem">
+                    <div class="imagecontainer">
+                        <a href="listings.html#bluemopp"><img src="images/bluemopp.jpg" alt="Blå moped"></a>
+                    </div>
+                    <div class="productdetails">
+                        <h2><a href="listings.html#bluemopp">Kawasaki KDX 125B 1991</a></h2>
+                        <p>En vacker blå, fräsig, och rent av superhäftig motorcykel som kommer att finnas där för dig i många mil.</p>
+                        <p>Finns tillgänglig i Lilla Edet just nu, ring om du är intresserad.</p>
+                        <a href="listings.html#bluemopp"><p>Läs mer på produktsidan</p></a>
+                    </div>
+                </div>
+                <div class="itemcontainer productitem">
+                    <div class="imagecontainer">
+                        <a href="listings.html#coolbil"><img src="images/bil.jpg" alt="Rostig bil"></a>
+                    </div>
+                    <div class="productdetails">
+                        <h2><a href="listings.html#coolbil">Volvo 142 1971</a></h2>
+                        <p>Väldigt rostig, men inte så illa som man tror. Inte körd sedan 90-talet, kanske går att rädda något.</p>
+                        <a href="listings.html#coolbil"><p>Läs mer på produktsidan</p></a>
+                    </div>
+                </div>
+            </div>
+            <aside> <!-- Right/aside content -->
+                <div class="itemcontainer"> <!-- Small introduction of our company -->
+                    <p><strong>Välkommen till ラブグルプ二十三!</strong> Här finnes annonser för produkter nuvarande till salu hos våran second-hand-butik.</p>
+                    <p>いらっしゃいませ。車とバイクはあるよ</p>
+                    <p>Vi har ett flertal diverse fordon till salu, som bland annat:</p>
+                    <ul>
+                        <li>Bilar</li>
+                        <li>Motorcyklar</li>
+                        <li>Mopeder</li>
+                    </ul>
+                    <p>Om ni har några frågor, vänligen <a href="contact.html">kontakta oss</a>.</p>
+                    <p class="butcentred">Välkommen in!</p>
+                </div>
+                <div class="itemcontainer">
+                    <a href="https://kau.se" target="_blank">
+                        <!-- Image from Karlstad University: https://www.kks.se/app/uploads/2020/04/skylt-i-ska%CC%88rpa-original-271807-1500x1000.jpg -->
+                        <img src="images/kausakura.jpg" alt="Karlstad Universitet utifrån">
+                    </a>
+                </div>
+                <div class="itemcontainer"> <!-- Newsletter form -->
+                    <h2>Gå med i vårat nyhetsbrev!</h2>
+                    <form class="adform">
+                        <p>E-post adress:</p>
+                        <input type="email" placeholder="example@email.abc" required>
+                        <p>Typ av nyhetsbrev:</p>
+                        <select>
+                            <option value="a">Alla nyhetsbrev</option>
+                            <option value="b">Bara erbjudanden</option>
+                            <option value="c">Bara uppdateringar</option>
+                            <option value="d">Bara bönor</option>
+                        </select><br>
+                        <p>Mängd bönor:</p>
+                        <label><input type="radio" name="beansRadio">Normalmängd</label><br>
+                        <label><input type="radio" name="beansRadio">Extra</label><br>
+                        <label><input type="radio" name="beansRadio">Färre</label><br>
+                        <textarea placeholder="Berätta för oss varför du gillar bönor"></textarea>
+                        <label><input type="checkbox" name="coolCheck" required>Jag godkänner villkoren</label><br>
+                        <label><input type="checkbox" name="coolCheck2">Jag godkänner villkoren extra mycket</label><br>
+                        <input type="submit" value="Skicka in">
+                    </form>
+                </div>
+            </aside>
+        </main>
+        <footer> <!-- Footer, includes our email, copyright and company name -->
+            <p>Vi säljer begagnade bönor, &copy;2022 ラブグルプ二十三 | <a href="mailto:contact@ラブグルプ二十三.se">contact@ラブグルプ二十三.se</a></p>
+        </footer>
+    </body>
+</html>

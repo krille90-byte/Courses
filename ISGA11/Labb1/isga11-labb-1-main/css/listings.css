@@ -1,0 +1,12 @@
+.listin {
+    /*display: flex;*/
+    text-align: left;
+    
+}
+.nextarea{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 16px;
+    
+}
